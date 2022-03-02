@@ -1,40 +1,30 @@
 ## Socket
-Oh yeh! Is python !!!
+A socket wrapper in Python, in the form of a module
 
-It is copy from https://github.com/lxzan/socket
+It is a port of https://github.com/lxzan/socket in Python
 
-- Worse performance！
-- Higher memory used
-- Lower security
+| Advantages           | Disadvantages      |
+|----------------------|--------------------|
+| Easy to understand   | Little inefficient |
+| Not so bad over all  | Not very optimized |
+|                      | Slightly insecure  |
 
-it maybe the advantages !!!
+#### Features 
 
-not so bad !!! 
-
-and to be well !!! 
-
-#### Describe 
-
-i'm sure that you can design it by yourself!!!
+There are quite a few features!
 
 - a read event handler
 - a write event handler 
 - a transfer message parser 
 - a request body
-- more and more you need to do...
-
-full of freedom, democracy, civilization, harmony, integrity, friendship, patriotism, dedication ...
-
 
 #### Performance 
 
-until now, an 4000 concurrent with 4 worker request is easy to deal on 2 second
-
-still had test to do
+From tests, an 4000 requests can be sent in 2 seconds with 4 workers
 
 #### Usage  
 
-##### server 
+##### Server 
 ```python
 from server import Server
 writer = "" #type: BaseWriter object or subclass object
@@ -47,14 +37,6 @@ app.run()  # max_listen still is a unused character
 
 #### client 
 
-no client prepared 
-
-
-
-
-### donate 
-
-look at yourself ...
-
+**Work in Progress*
 
 
